@@ -1,0 +1,213 @@
+/* 
+
+https://www.origamid.com/projetos/css-grid-layout-guia-completo/
+
+*/
+
+
+:root {
+    --bluebkg: #006dfb;
+    --blue: #004af9;
+    --red: #ec1551;
+    --amber-600: #d97706;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+      0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+body    {
+    font-family: 'Noto Sans', sans-serif;    
+    font-weight: 400;
+    color: white;
+    background: var(--bluebkg);
+}
+
+strong {     font-weight: 700; }
+h1,h2,h3,h4,h5,h6 {  font-family: 'Bungee', cursive; }
+
+section#principal {
+    background: transparent url(../images/main_bkg.jpg) no-repeat top center /cover;
+    min-height:100vh;
+    padding-bottom: 15px;
+}
+
+div#boxes {
+    background: transparent url(../images/img_baloespessoas.png) no-repeat top right /65%;
+    background-position-y: 85px;
+    padding-top: 45px;
+    padding-bottom: 20vh;
+}
+
+#boxes .txtvoce  {
+    padding: 30px;
+}
+
+#boxes .gota img {
+    position: absolute;
+    right: 13vw;
+    top: 42vh;
+}
+
+#boxes .mao img {
+    position: absolute;
+    right: 8vw;
+    top: 53vh;
+}
+
+#txt_bus {
+    background: transparent url(../images/txt_busbkg.png) no-repeat top center /contain;
+    max-width: 400px;
+    padding: 15px 20px 40px 165px;
+    box-sizing: content-box;
+    line-height: 1.3em;
+    margin: -5% 0 0 10%;
+}
+
+#txt_bus p {
+    padding-right: 7px;
+}
+
+#oquefaremos {
+    margin: 5vh auto;
+    box-sizing: border-box;
+}
+
+#oquefaremos .txt_oquefaremos {
+    padding: 20% 5%;
+}
+
+hr {
+    margin: 10px 0;
+    border-top: none;
+    border-bottom: 2px dotted #fff;
+}
+
+#assentos {
+    text-align: center;
+    background: var(--blue);
+    margin: 30px auto;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+
+#assentos .item.p20 img {
+padding-top: 20px;
+box-sizing: content-box;
+}
+
+#bus {
+    padding: 20px;
+    margin: 25px auto 55px;
+    text-align: center;
+}
+
+/* Grid Container */
+.grid {
+	display: grid;
+}
+
+.grid-template-columns {
+	grid-template-columns: 30% 70%;
+}
+
+.grid-template-columns-3 {
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.subgrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.subgrid > div {
+	background: rgba(0,0,0,.3);
+}
+
+
+
+footer {}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+
+    body, html {
+        overflow-x: hidden;
+    }
+    
+    #boxes {
+        background-position-y: 110px !important;
+        padding-top: 10px !important;
+        background-size: 90% !important;
+        padding-bottom: 5vh !important;
+    }
+    
+    #boxes .logo img {
+        width: 300px !important;
+        height: auto !important;
+    }
+    
+    #boxes .txtvoce {
+        padding: 240px 0 0 0;
+    }
+    
+    #boxes .gota img {
+        right: 5vw;
+        top: 29vh;
+        width: 35px;
+        height: auto;
+    }
+    
+    #boxes .mao img {
+        right: 2vw;
+        top: 45vh;
+        width: 95px;
+        height: auto;
+    }
+    
+
+    #txt_bus {
+        background: #01aefd url(../images/txt_busbkg.png) no-repeat center center /contain;
+        max-width: 400px;
+        padding: 15px 15px 25px 100px;
+        margin: 0 4%;
+        border-radius: 10px;
+    }
+
+
+
+    .grid {
+        display: block;
+    }
+
+    #oquefaremos .txt_oquefaremos {
+        padding: 5% 5%;
+    }
+
+    #assentos {
+        margin: 20px 10px;
+        padding: 10%;
+    }    
+
+    #bus {
+        overflow: scroll;
+    }    
+
+    footer {
+        padding: 2% 20%;
+    }
+
+    footer img {
+        width: 80%;
+    }    
+
+    }
