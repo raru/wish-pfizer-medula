@@ -37,13 +37,7 @@ layout: "base.njk"
         {% EleventyImage "/images/bus_bkg.png", "Logo historias para Doar", "(min-width: 16em) 50vw, 100vw" %}
     <!-- (A) SEAT LAYOUT -->
     <div id="layout"></div>
-    <!-- (B) LEGEND -->
-    <div id="legend">
-      <div class="seat"></div> <div class="txt">Available</div>
-      <div class="seat taken"></div> <div class="txt">Taken</div>
-      <div class="seat selected"></div> <div class="txt">Your Chosen Seats</div>
-    </div>
     <!-- (C) SAVE SELECTION -->
-    <button id="save" onclick="reserve.save()">Reserve Seats</button>        
+    <button id="save" onclick="reserve.save()">Reservar</button>        
     </div>
 </section>
