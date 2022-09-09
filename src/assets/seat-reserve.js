@@ -50,10 +50,10 @@ var reserve = {
       data.append("seats", JSON.stringify(seats));
       data.append("name", "JON DOE");
       data.append("email", "JON@DOE.COM");
-      fetch("dummy.php", {
-        method: "POST",
-        body : data
-      })
+      // fetch("dummy.php", {
+      //   method: "POST",
+      //   body : data
+      // })
       .then(res => res.text())
       .then((txt) => { console.log(txt); });
     }
