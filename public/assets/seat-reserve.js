@@ -50,12 +50,13 @@ var reserve = {
       data.append("seats", JSON.stringify(seats));
       data.append("name", "JON DOE");
       data.append("email", "JON@DOE.COM");
-      fetch("https://regal-kheer-8fe776.netlify.app/assets/dummy.php", {
-        method: "POST",
-        body : data
-      })
-      .then(res => res.text())
-      .then((txt) => { console.log(txt); });
+      // fetch("https://regal-kheer-8fe776.netlify.app/assets/dummy.php", {
+      //   method: "POST",
+      //   body : data
+      // })
+      // .then(res => res.text())
+      // .then((txt) => { console.log(txt); });
+      console.log(data);
     }
   }
 };

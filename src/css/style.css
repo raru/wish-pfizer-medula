@@ -18,23 +18,27 @@ body    {
     font-family: 'Noto Sans', sans-serif;    
     font-weight: 400;
     color: white;
-    background: var(--bluebkg);
+    background: var(--bluebkg) url(../images/main_bkg.jpg) no-repeat top center /cover;
 }
 
 strong {     font-weight: 700; }
 h1,h2,h3,h4,h5,h6 {  font-family: 'Bungee', cursive; }
+small { line-height: 1em; }
 
 section#principal {
-    background: transparent url(../images/main_bkg.jpg) no-repeat top center /cover;
     min-height:100vh;
     padding-bottom: 15px;
 }
+.logo img  {
+   min-width: 465px;
+    height: auto;
+}
 
 div#boxes {
-    background: transparent url(../images/img_baloespessoas.png) no-repeat top right /65%;
+    background: transparent url(../images/img_baloespessoas.png) no-repeat top right /68%;
     background-position-y: 85px;
-    padding-top: 45px;
-    padding-bottom: 20vh;
+    padding-top: 20px;
+    padding-bottom: 13vh;
 }
 
 #boxes .txtvoce  {
@@ -44,22 +48,23 @@ div#boxes {
 #boxes .gota img {
     position: absolute;
     right: 13vw;
-    top: 42vh;
+    top: 40vh;
 }
 
 #boxes .mao img {
     position: absolute;
-    right: 8vw;
-    top: 53vh;
+    right: 9vw;
+    top: 50vh;
 }
 
 #txt_bus {
     background: transparent url(../images/txt_busbkg.png) no-repeat top center /contain;
     max-width: 400px;
-    padding: 15px 20px 40px 165px;
+    padding: 10px 20px 40px 165px;
     box-sizing: content-box;
-    line-height: 1.3em;
-    margin: -5% 0 0 10%;
+    line-height: 1.1em;
+    margin: -5% 0 0 5%;
+    font-size:1.2em;
 }
 
 #txt_bus p {
@@ -67,12 +72,17 @@ div#boxes {
 }
 
 #oquefaremos {
-    margin: 5vh auto;
+    margin: 5vh auto 2vh;
     box-sizing: border-box;
 }
 
-#oquefaremos .txt_oquefaremos {
+#oquefaremos .img_oquefaremos {
     padding: 20% 5%;
+}
+
+#oquefaremos .txt_oquefaremos {
+    padding: 0% 5%;
+    font-size:1.2em;
 }
 
 hr {
@@ -81,11 +91,14 @@ hr {
     border-bottom: 2px dotted #fff;
 }
 
+
+#reserva {     background: var(--bluebkg);     padding: 2% 12%;}
+
 #assentos {
     text-align: center;
     background: var(--blue);
     margin: 30px auto;
-    padding: 1%;
+    padding: 2% 3%;
     border-radius: 20px;
 }
 
@@ -144,16 +157,18 @@ footer {}
         overflow-x: hidden;
     }
     
+    
     #boxes {
-        background-position-y: 110px !important;
+        background-position-y: 145px !important;
         padding-top: 10px !important;
         background-size: 90% !important;
         padding-bottom: 5vh !important;
     }
     
     #boxes .logo img {
-        width: 300px !important;
+        width: 350px !important;
         height: auto !important;
+        min-width: 350px !important;
     }
     
     #boxes .txtvoce {
@@ -161,8 +176,8 @@ footer {}
     }
     
     #boxes .gota img {
-        right: 5vw;
-        top: 29vh;
+        right: 8vw;
+        top: 28vh;
         width: 35px;
         height: auto;
     }
@@ -183,7 +198,9 @@ footer {}
         border-radius: 10px;
     }
 
-
+    #oquefaremos .img_oquefaremos {
+        padding: 5% 5%;
+    }
 
     .grid {
         display: block;
